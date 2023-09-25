@@ -1,0 +1,46 @@
+.navbar {
+    border-right: 1px solid #ccc;
+    min-height: 100vh;
+    /* border: 2px solid green; */
+    display: block;
+  }
+
+  nav {
+    /* border: 2px solid red; */
+  }
+  
+  
+  .navbar nav ul li {
+    border-bottom: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    list-style: none;
+  }
+  
+  .navbar nav ul li a {
+    display: block;
+    width: 100%;
+    color: #0984e3;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s;
+  }
+  .navbar nav ul li a:hover {
+    color: black;
+  }
+  
+  .active {
+    cursor: pointer;
+  }
+  
+  .active::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: orangered;
+  }
